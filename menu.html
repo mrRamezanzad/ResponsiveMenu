@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menuStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <title>menu</title>
+</head>
+
+<body>
+    <div class="navigation clearfix red">
+<span class="logo"><img src="./sources/Logo.png" alt="صنایع غذایی ریحانه">     </span>
+   <ul class="nav">
+            <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+            <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+            <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+            <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+            <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+            <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+        </ul>
+
+        <!-- <div class="logo"><img src="./sources/Logo.png" alt="صنایع غذایی ریحانه"></div>
+        <div class="nav-left">
+            <ul>
+                <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+                <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+                <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
+            </ul>
+        </div> -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script>
+        $(function () {
+            
+            $(window).resize(function () { 
+                if ($(window).width() <= 377) {
+                    // console.log($(window).width());
+                    // $(".nav").addClass("toggled-menu");
+                    // $(".logo ").addClass("centered");
+                    // $(".logo img").addClass("centered");
+                    // $(selector).toggleClass(className, switch);
+                    $("ul").hide();
+                    $(".logo").click(function (e) { 
+                        e.preventDefault();
+                        $("ul").toggle("slow");
+                        $("ul li").css("display", "block");
+                        
+                        //    $(".navigation ul").css("display", "block!important");
+                    }); 
+                    
+                }else{
+                    $("ul").show();
+                    
+                    // $(".nav").removeClass("toggled-menu");
+                    // $(".logo").removeClass("centered");
+                    // $(".logo img").removeClass("centered");
+                }
+
+            });
+        });
+    
+    </script>
+</body>
+
+</html>
