@@ -13,8 +13,8 @@
 
 <body>
     <div class="navigation clearfix red">
-<span class="logo"><img src="./sources/Logo.png" alt="صنایع غذایی ریحانه">     </span>
-   <ul class="nav">
+        <span class="logo"><img src="./sources/Logo.png" alt="صنایع غذایی ریحانه"> </span>
+        <ul class="nav">
             <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
             <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
             <li class="list-item"><a class="menu-item" href="#">خانه</a></li>
@@ -32,38 +32,38 @@
             </ul>
         </div> -->
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-    <script>
-        $(function () {
-            
-            $(window).resize(function () { 
-                if ($(window).width() <= 377) {
-                    // console.log($(window).width());
-                    // $(".nav").addClass("toggled-menu");
-                    // $(".logo ").addClass("centered");
-                    // $(".logo img").addClass("centered");
-                    // $(selector).toggleClass(className, switch);
-                    $("ul").hide();
-                    $(".logo").click(function (e) { 
-                        e.preventDefault();
-                        $("ul").toggle("slow");
-                        $("ul li").css("display", "block");
-                        
-                        //    $(".navigation ul").css("display", "block!important");
-                    }); 
-                    
-                }else{
-                    $("ul").show();
-                    
-                    // $(".nav").removeClass("toggled-menu");
-                    // $(".logo").removeClass("centered");
-                    // $(".logo img").removeClass("centered");
-                }
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+        <script>
+            $(function () {
 
+                $(window).resize(function () {
+                    if ($(window).width() <= 377) {
+                        // console.log($(window).width());
+                        // $(".nav").addClass("toggled-menu");
+                        // $(".logo ").addClass("centered");
+                        // $(".logo img").addClass("centered");
+                        // $(selector).toggleClass(className, switch);
+                        $("ul").hide();
+                        $(".logo").click(function (e) {
+                            e.preventDefault();
+                            $("ul").toggle("slow");
+                            $("ul li").css("display", "block");
+
+                            //    $(".navigation ul").css("display", "block!important");
+                        });
+
+                    } else {
+                        $("ul").show();
+
+                        // $(".nav").removeClass("toggled-menu");
+                        // $(".logo").removeClass("centered");
+                        // $(".logo img").removeClass("centered");
+                    }
+
+                });
             });
-        });
-    
-    </script>
+
+        </script>
 </body>
 
 </html>
